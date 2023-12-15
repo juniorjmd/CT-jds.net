@@ -59,12 +59,10 @@ Public Class FrmLogin
             Dim USR As String = Usuario.Text.ToUpper()
             Dim PWR As String = password.Text.ToUpper()
 
-
-
             If USR = "ADMIN" And PWR = "ADMIN" Then
                 continuar = True
-
             Else
+
                 MessageBox.Show("Error en las credenciales")
                 Usuario.Focus()
             End If
