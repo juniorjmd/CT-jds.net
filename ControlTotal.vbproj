@@ -66,6 +66,7 @@
       <HintPath>packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.SQLite, Version=1.0.118.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
       <HintPath>packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\lib\net46\System.Data.SQLite.dll</HintPath>
@@ -116,6 +117,8 @@
       <DependentUpon>FrmLogin.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Modulos\Funciones.vb" />
+    <Compile Include="Modulos\Globales.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -135,6 +138,48 @@
       <DependentUpon>FrmPrincipal.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="noPOS\credencialesFactory.Designer.vb">
+      <DependentUpon>credencialesFactory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="noPOS\credencialesFactory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="noPOS\enviarAfactory.Designer.vb">
+      <DependentUpon>enviarAfactory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="noPOS\enviarAfactory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="noPOS\facturacion.Designer.vb">
+      <DependentUpon>facturacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="noPOS\facturacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="noPOS\resFacturaElectronica.Designer.vb">
+      <DependentUpon>resFacturaElectronica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="noPOS\resFacturaElectronica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POS\Clientes.Designer.vb">
+      <DependentUpon>Clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="POS\Clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POS\facturaPOS.Designer.vb">
+      <DependentUpon>facturaPOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="POS\facturaPOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POS\resumenVentaPOS.Designer.vb">
+      <DependentUpon>resumenVentaPOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="POS\resumenVentaPOS.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -164,6 +209,10 @@
     </None>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\ico\" />
+    <Folder Include="Modelos\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
